@@ -15,8 +15,8 @@ describe('body encoding', function () {
     server = startProxyTarget(8109, 1000);
   });
 
-  after(function () {
-    server.close();
+  after(function (done) {
+    server.close(done);
   });
 
   this.timeout(10000);

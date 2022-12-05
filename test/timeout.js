@@ -19,8 +19,8 @@ describe('honors timeout option', function () {
     }]);
   });
 
-  afterEach(function () {
-    other.close();
+  afterEach(function (done) {
+    other.close(done);
   });
 
   function assertSuccess(server, done) {

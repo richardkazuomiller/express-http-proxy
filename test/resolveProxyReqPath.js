@@ -107,8 +107,8 @@ describe('resolveProxyReqPath', function () {
         .get('/test?a=1&b=2&c=3')
         .end(function (err, res) {
           assert.equal(res.text, '/tent?a=1&b=2&c=3');
-          proxyServer.close();
-          done(err);
+          assert(err === null);
+          proxyServer.close(done);
         });
     });
   });

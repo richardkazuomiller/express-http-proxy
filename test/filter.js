@@ -26,8 +26,8 @@ describe('filter', function () {
     app = express();
   });
 
-  afterEach(function () {
-    proxyServer.close();
+  afterEach(function (done) {
+    proxyServer.close(done);
   });
 
   describe('when filter function returns true', function () {

@@ -26,8 +26,8 @@ describe('resolveProxyReqPath', function () {
     server = proxyTarget(12345, 100, handlers);
   });
 
-  after(function () {
-    server.close();
+  after(function (done) {
+    server.close(done);
   });
 
   aliases.forEach(function (alias) {

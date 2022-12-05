@@ -15,8 +15,8 @@ describe('uses remote path', function () {
   var proxyKeyPath = '/somePath';
   var server;
 
-  afterEach(function () {
-    server.close();
+  afterEach(function (done) {
+    server.close(done);
   });
 
   proxyRoutes.forEach(function (path) {

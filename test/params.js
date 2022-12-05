@@ -26,8 +26,8 @@ describe('proxies query parameters', function () {
     app.use(proxy('localhost:12346'));
   });
 
-  afterEach(function () {
-    proxyServer.close();
+  afterEach(function (done) {
+    proxyServer.close(done);
   });
 
   it('repeats query params to proxy server', function (done) {
