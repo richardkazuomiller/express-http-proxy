@@ -1,6 +1,6 @@
 {
   "name": "@richardkazuomiller/express-http-proxy",
-  "version": "2.0.0",
+  "version": "2.0.1-next.1",
   "description": "http proxy middleware for express",
   "engines": {
     "node": ">=14.0.0"
