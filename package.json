@@ -11,11 +11,12 @@
     "test:debug": "mocha debug -R spec test --recursive --exit",
     "coverage": "nyc npm run test",
     "mocha": "mocha -R spec test --recursive --exit",
-    "lint": "eslint index.js **/*js"
+    "lint": "eslint index.js **/*js",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/villadora/express-http-proxy.git"
+    "url": "git://github.com/richardkazuomiller/express-http-proxy.git"
   },
   "keywords": [
     "express-http-proxy"
@@ -26,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/villadora/express-http-proxy/issues"
+    "url": "https://github.com/richardkazuomiller/express-http-proxy/issues"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.2",
