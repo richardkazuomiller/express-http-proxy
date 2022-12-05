@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/richardkazuomiller/express-http-proxy/compare/v2.0.0...v2.0.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* version bump only ([8ee7c5e](https://github.com/richardkazuomiller/express-http-proxy/commit/8ee7c5e9af1d1a17451733756f32a2ec127e0bab))
+
 ## [2.0.1-next.1](https://github.com/richardkazuomiller/express-http-proxy/compare/v2.0.0...v2.0.1-next.1) (2022-12-05)
 
 
