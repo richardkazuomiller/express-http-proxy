@@ -1,4 +1,4 @@
-# express-http-proxy [![NPM version](https://badge.fury.io/js/express-http-proxy.svg)](http://badge.fury.io/js/express-http-proxy) [![Build Status](https://travis-ci.org/villadora/express-http-proxy.svg?branch=master)](https://travis-ci.org/villadora/express-http-proxy) 
+# express-http-proxy [![npm version](https://badge.fury.io/js/@richardkazuomiller%2Fexpress-http-proxy.svg)](https://badge.fury.io/js/@richardkazuomiller%2Fexpress-http-proxy) [![Build Status](https://github.com/richardkazuomiller/express-http-proxy/actions/workflows/node.js.yml/badge.svg)](https://github.com/richardkazuomiller/express-http-proxy/actions?query=branch%3Amaster++) 
 
 
 Express middleware to proxy request to another host and pass response back to original caller.
@@ -6,7 +6,7 @@ Express middleware to proxy request to another host and pass response back to or
 ## Install
 
 ```bash
-$ npm install express-http-proxy --save
+$ npm install @richardkazuomiller/express-http-proxy --save
 ```
 
 ## Usage

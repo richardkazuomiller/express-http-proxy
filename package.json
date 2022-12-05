@@ -1,6 +1,6 @@
 {
   "name": "@richardkazuomiller/express-http-proxy",
-  "version": "2.0.0",
+  "version": "2.0.0-next.2",
   "description": "http proxy middleware for express",
   "engines": {
     "node": ">=14.0.0"
@@ -11,24 +11,28 @@
     "test:debug": "mocha debug -R spec test --recursive --exit",
     "coverage": "nyc npm run test",
     "mocha": "mocha -R spec test --recursive --exit",
-    "lint": "eslint index.js **/*js"
+    "lint": "eslint index.js **/*js",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/villadora/express-http-proxy.git"
+    "url": "https://github.com/richardkazuomiller/express-http-proxy.git"
   },
   "keywords": [
     "express-http-proxy"
   ],
   "author": {
-    "name": "villadora",
-    "email": "jky239@gmail.com"
+    "name": "Ricky Miller",
+    "email": "ricky@ricky.me"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/villadora/express-http-proxy/issues"
+    "url": "https://github.com/richardkazuomiller/express-http-proxy/issues"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
     "body-parser": "^1.17.2",
     "chai": "^4.1.2",
     "cookie-parser": "^1.4.3",
@@ -37,6 +41,7 @@
     "mocha": "^8.0.1",
     "nock": "13.2.9",
     "nyc": "15.1.0",
+    "semantic-release": "19.0.5",
     "supertest": "^3.4.2"
   },
   "dependencies": {
@@ -67,6 +72,39 @@
     {
       "name": "Nik Krimm",
       "url": "https://github.com/monkpow"
+    },
+    {
+      "name": "Ricky Miller",
+      "url": "https://github.com/richardkazuomiller"
     }
-  ]
+  ],
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
