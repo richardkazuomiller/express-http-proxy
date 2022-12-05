@@ -23,8 +23,8 @@ describe('proxies to requested port', function () {
     other = proxyTarget(56001);
   });
 
-  afterEach(function () {
-    other.close();
+  afterEach(function (done) {
+    other.close(done);
   });
 
 

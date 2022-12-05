@@ -12,11 +12,11 @@ describe('when userResHeaderDecorator is defined', function () {
   var app;
   var  serverReference;
 
-  afterEach(function () {
-    serverReference.close();
+  afterEach(function (done) {
+    serverReference.close(done);
   });
 
-  beforeEach(function () {
+  beforeEach(function (done) {
     app = express();
     var pTarget = express();
     pTarget.use(function (req, res) {
@@ -24,11 +24,7 @@ describe('when userResHeaderDecorator is defined', function () {
       res.header('x-my-secret-header', 'mighty-mouse');
       res.json(req.headers);
     });
-    serverReference = pTarget.listen(12345);
-  });
-
-  afterEach(function () {
-    serverReference.close();
+    serverReference = pTarget.listen(12345, done);
   });
 
   it('can delete a header', function (done) {

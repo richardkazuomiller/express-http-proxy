@@ -21,8 +21,8 @@ describe('userResDecorator', function () {
       serverReference = slowTarget.listen(12345);
     });
 
-    afterEach(function () {
-      serverReference.close();
+    afterEach(function (done) {
+      serverReference.close(done);
     });
 
     it('skips any handling', function (done) {
@@ -172,8 +172,7 @@ describe('userResDecorator', function () {
         res.headers.location.match(/localhost:3000/);
       })
       .end(function () {
-        server.close();
-        done();
+        server.close(done);
       });
   });
 });

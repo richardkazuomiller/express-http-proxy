@@ -26,8 +26,8 @@ describe('error handling can be over-ridden by user', function () {
     app = express();
   });
 
-  afterEach(function () {
-    proxyServer.close();
+  afterEach(function (done) {
+    proxyServer.close(done);
   });
 
   describe('when user provides a null function', function () {

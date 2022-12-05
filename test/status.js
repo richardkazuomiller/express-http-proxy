@@ -17,8 +17,8 @@ describe('proxies status code', function () {
     server = mockEndpoint.listen(21239);
   });
 
-  afterEach(function () {
-    server.close();
+  afterEach(function (done) {
+    server.close(done);
   });
 
   [304, 404, 200, 401, 500].forEach(function (status) {

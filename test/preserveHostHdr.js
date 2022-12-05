@@ -30,8 +30,8 @@ describe('preserves host header only when requested', function () {
       }));
     });
 
-    after(function () {
-      proxyServer.close();
+    after(function (done) {
+      proxyServer.close(done);
     });
 
     it('host is passed forward', function (done) {
@@ -52,8 +52,8 @@ describe('preserves host header only when requested', function () {
       app.use(proxy('localhost:12346'));
     });
 
-    after(function () {
-      proxyServer.close();
+    after(function (done) {
+      proxyServer.close(done);
     });
 
     it('host is not passed forward', function (done) {

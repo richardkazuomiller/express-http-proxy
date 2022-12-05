@@ -23,8 +23,8 @@ describe('middleware compatibility', function () {
     proxyServer = proxyTarget(12346, 100, proxyRouteFn);
   });
 
-  afterEach(function () {
-    proxyServer.close();
+  afterEach(function (done) {
+    proxyServer.close(done);
   });
 
   it('should use req.body if defined', function (done) {

@@ -54,9 +54,10 @@ describe('streams / piped requests', function () {
     targetServer = chunkingProxyServer();
   });
 
-  afterEach(function () {
-    server.close();
-    targetServer.close();
+  afterEach(function (done) {
+    server.close(() => {
+      targetServer.close(done);
+    });
   });
 
   describe('when streaming options are truthy', function () {

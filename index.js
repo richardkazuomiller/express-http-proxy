@@ -44,8 +44,7 @@ module.exports = function proxy(host, userOptions) {
       .then(decorateUserRes)
       .then(sendUserRes)
       .catch(function (err) {
-        // I sometimes reject without an error to shortcircuit the remaining
-        // steps and return control to the host application.
+        // TODO: stop rejecting undefined
 
         if (err) {
           var resolver = (container.options.proxyErrorHandler) ?
