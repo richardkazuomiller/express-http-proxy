@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/richardkazuomiller/express-http-proxy.git"
+    "url": "https://github.com/richardkazuomiller/express-http-proxy.git"
   },
   "keywords": [
     "express-http-proxy"
