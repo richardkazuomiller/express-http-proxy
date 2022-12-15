@@ -11,7 +11,7 @@
     "test:debug": "mocha debug -R spec test --recursive --exit",
     "coverage": "nyc npm run test",
     "mocha": "mocha -R spec test --recursive --exit",
-    "lint": "eslint index.js **/*js",
+    "lint": "eslint .",
     "release": "semantic-release"
   },
   "repository": {
