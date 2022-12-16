@@ -6,5 +6,8 @@
   "separateMultipleMajor": true,
   "stabilityDays": 3,
   "prConcurrentLimit": 0,
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "reviewers": [
+    "richardkazuomiller"
+  ]
 }
