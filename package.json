@@ -42,7 +42,7 @@
     "nock": "13.2.9",
     "nyc": "15.1.0",
     "semantic-release": "19.0.5",
-    "supertest": "^3.4.2"
+    "supertest": "^4.0.0"
   },
   "dependencies": {
     "debug": "^3.0.1",
