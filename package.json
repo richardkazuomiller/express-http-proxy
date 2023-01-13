@@ -39,7 +39,7 @@
     "eslint": "^8.0.0",
     "express": "^4.15.4",
     "mocha": "^10.2.0",
-    "nock": "13.2.9",
+    "nock": "13.3.0",
     "nyc": "15.1.0",
     "semantic-release": "19.0.5",
     "supertest": "^4.0.0"
