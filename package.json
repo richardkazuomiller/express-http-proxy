@@ -30,7 +30,7 @@
     "url": "https://github.com/richardkazuomiller/express-http-proxy/issues"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "body-parser": "^1.17.2",
@@ -41,7 +41,7 @@
     "mocha": "^10.2.0",
     "nock": "13.3.0",
     "nyc": "15.1.0",
-    "semantic-release": "20.1.1",
+    "semantic-release": "20.1.3",
     "supertest": "^4.0.0"
   },
   "dependencies": {
