@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/richardkazuomiller/express-http-proxy/compare/v2.0.1...v2.0.2) (2023-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency debug to v3.2.7 [security] ([3ade04e](https://github.com/richardkazuomiller/express-http-proxy/commit/3ade04e5db84dc6844edf9ee1ff2a07c382f8742))
+* **deps:** update dependency es6-promise to v4.2.8 ([90402f2](https://github.com/richardkazuomiller/express-http-proxy/commit/90402f2705a6881687d9380951a35b9e4457ca1f))
+
 ## [2.0.1](https://github.com/richardkazuomiller/express-http-proxy/compare/v2.0.0...v2.0.1) (2022-12-05)
 
 
