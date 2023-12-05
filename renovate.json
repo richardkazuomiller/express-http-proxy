@@ -9,5 +9,6 @@
   "prHourlyLimit": 0,
   "reviewers": [
     "richardkazuomiller"
-  ]
+  ],
+  "rebaseWhen": "behind-base-branch"
 }
