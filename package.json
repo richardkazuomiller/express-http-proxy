@@ -38,7 +38,7 @@
     "cookie-parser": "^1.4.3",
     "eslint": "^8.0.0",
     "express": "^4.15.4",
-    "mocha": "^10.2.0",
+    "mocha": "^11.0.0",
     "nock": "13.4.0",
     "nyc": "15.1.0",
     "semantic-release": "20.1.3",
